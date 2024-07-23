@@ -1,11 +1,10 @@
-# Ex3
 products = [
     {"name": "Apple", "price": 1.50, "quantity": 100, "expired": True},
     {"name": "Banana", "price": 0.75, "quantity": 50, "expired": False},
     {"name": "Orange", "price": 1.25, "quantity": 80, "expired": True}
     ]
-# q1:count products was expired
-# q2:find the product that has maximum price
-# q3:find the product that has minimum quantity
-# q4:sum the total of quantity
-# q5:sum the total of price
+total=0
+for i in range(len(products)):
+    if products[i]["price"]>total:
+        total = products[i]["price"]
+print(total)
