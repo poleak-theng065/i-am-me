@@ -1,4 +1,10 @@
-number = [1,2,3,4,5,6,12,11]
-for i in range(number):
-    if  number[i]%2==0:
-        print(number[i])
+# enter your password: 123
+# if you ennter correct "123" message "your password is correct"
+# if you enter wrong password will message: "Try again"
+password=None
+while password != 123:
+    password = int(input("Enter your Password"))
+    if password == 123 :
+        print("Your password is correct")
+    else:
+        print("Try agian")
