@@ -3,8 +3,7 @@ products = [
     {"name": "Banana", "price": 0.75, "quantity": 50, "expired": False},
     {"name": "Orange", "price": 1.25, "quantity": 80, "expired": True}
     ]
-total = products[1]["price"]
+total=0
 for i in range(len(products)):
-    if products[i]["price"]<total:
-        total = products[i]["price"]
+    total+=products[i]["price"]
 print(total)
